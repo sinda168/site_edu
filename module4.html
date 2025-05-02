@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الوحدة الرابعة</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="small-screen">
+        <div class="header">
+          <a class="logo" href="/">
+            <img src="th.png" alt="logo" />
+          </a>
+
+          <nav class="nav-links">
+            <a href="index.html">الرئسية</a>
+            <a href="module1.html">الوحدة الأولى</a>
+            <a href="module2.html">الوحدة الثانية</a>
+            <a href="module3.html">الوحدة الثالثة</a>
+            <a href="module4.html">الوحدة الرابعة</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="card-icon">🏙️</div>
+        <h3 class="card-title">الدرس الثامن عشر: المدينة في حاجة إلى الريف</h3>
+        <button class="card-btn" onclick="openModal('modal1')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌾</div>
+        <h3 class="card-title">الدرس التاسع عشر: الريف في حاجة إلى المدينة</h3>
+        <button class="card-btn" onclick="openModal('modal2')">استكشاف</button>
+      </div>
+
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h3>الدرس الثامن عشر: المدينة في حاجة إلى الريف</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal1')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h3>الدرس التاسع عشر: الريف في حاجة إلى المدينة</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal2')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+      <p>&copy; 2025 بوصلة المعلم. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    </script>
+  </body>
+</html>

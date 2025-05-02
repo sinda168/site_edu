@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الوحدة الثالثة</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css"      />
+  </head>
+
+  <body>
+    <header>
+      <div class="small-screen">
+        <div class="header">
+          <a class="logo" href="/">
+            <img src="th.png" alt="logo" />
+          </a>
+
+          <nav class="nav-links">
+            <a href="index.html">الرئسية</a>
+            <a href="module1.html">الوحدة الأولى</a>
+            <a href="module2.html">الوحدة الثانية</a>
+            <a href="module3.html">الوحدة الثالثة</a>
+            <a href="module4.html">الوحدة الرابعة</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Cards -->
+      <div class="card">
+        <div class="card-icon">🌆</div>
+        <h3 class="card-title">الدرس التاسع: المشهد الحضري المحلي</h3>
+        <button class="card-btn" onclick="openModal('modal1')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🧭</div>
+        <h3 class="card-title">الدرس العاشر: موضع المدينة وموقعها</h3>
+        <button class="card-btn" onclick="openModal('modal2')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏗️</div>
+        <h3 class="card-title">الدرس الحادي عشر: تصميم المدينة</h3>
+        <button class="card-btn" onclick="openModal('modal3')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏭</div>
+        <h3 class="card-title">الدرس الثاني عشر: أنشطة المدينة</h3>
+        <button class="card-btn" onclick="openModal('modal4')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🕌</div>
+        <h3 class="card-title">
+          الدرس الثالث عشر: مشهد مدينة تونس الموقع والموضع
+        </h3>
+        <button class="card-btn" onclick="openModal('modal5')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📐</div>
+        <h3 class="card-title">الدرس الرابع عشر: تصميم مدينة تونس</h3>
+        <button class="card-btn" onclick="openModal('modal6')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏢</div>
+        <h3 class="card-title">
+          الدرس الخامس عشر: تونس العاصمة الأنشطة والوظائف
+        </h3>
+        <button class="card-btn" onclick="openModal('modal7')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3 class="card-title">الدرس السادس عشر: باريس - الموضع والموقع</h3>
+        <button class="card-btn" onclick="openModal('modal8')">استكشاف</button>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🗼</div>
+        <h3 class="card-title">الدرس السابع عشر: باريس - التصميم والأنشطة</h3>
+        <button class="card-btn" onclick="openModal('modal9')">استكشاف</button>
+      </div>
+
+      <!-- Modals -->
+      <!-- You can copy/paste this structure for each modal -->
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h3>الدرس التاسع: المشهد الحضري المحلي</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal1')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal 2 to 9 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h3>الدرس العاشر: موضع المدينة وموقعها</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal2')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <h3>الدرس الحادي عشر: تصميم المدينة</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal3')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <h3>الدرس الثاني عشر: أنشطة المدينة</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal4')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <h3>الدرس الثالث عشر: مشهد مدينة تونس الموقع والموضع</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal5')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <h3>الدرس الرابع عشر: تصميم مدينة تونس</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal6')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <h3>الدرس الخامس عشر: تونس العاصمة الأنشطة والوظائف</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal7')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <h3>الدرس السادس عشر: باريس - الموضع والموقع</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal8')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <h3>الدرس السابع عشر: باريس - التصميم والأنشطة</h3>
+          <ul>
+            <li>
+              <a href="#"><span class="icon">📄</span> تلخيص الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
+            </li>
+          </ul>
+          <button class="close-btn" onclick="closeModal('modal9')">
+            إغلاق
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 بوصلة المعلم. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+         // Scroll Up functionality
+         window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          // Show scroll-up button
+          document.getElementById("scrollUpBtn").style.display = "block";
+        } else {
+          // Hide scroll-up button
+          document.getElementById("scrollUpBtn").style.display = "none";
+        }
+      };
+
+      // Scroll to top function
+      function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera
+      }
+
+
+
+    </script>
+
+
+<button id="scrollUpBtn" onclick="scrollToTop()" style="display:none;">↑ </button>
+  </body>
+</html>

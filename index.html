@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <script>
+      // Prevent infinite loop by checking if already coming from splash
+      const isSplash = window.location.pathname.includes("splash.html");
+      const fromSplash = document.referrer.includes("splash.html");
+
+      if (!isSplash && !fromSplash) {
+        const currentPage = window.location.pathname.split("/").pop(); // e.g., 'index.html'
+        window.location.href = `splash.html?next=${currentPage}`;
+      }
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بوصلة المعلم</title>
+
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a class="logo" href="/"><img src="th.png" alt="logo" /></a>
+
+        <nav class="nav-links" id="nav">
+          <a href="index.html" class="active">الرئيسية</a>
+          <a href="module1.html">الوحدة الأولى</a>
+          <a href="module2.html">الوحدة الثانية</a>
+          <a href="module3.html">الوحدة الثالثة</a>
+          <a href="module4.html">الوحدة الرابعة</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="cours geo/1.mp4 " type="video/mp4" />
+      </video>
+      <div class="video-overlay">
+        <div class="scroller-wrapper">
+          <div class="scroller">
+            <p>مرحبًا بكم في منصة تعليمية تفاعلية مخصصة للمعلمين!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="cards-container">
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3 class="card-title">الوحدة الأولى</h3>
+        <p>المواقع والاتجاهات الجغرافية</p>
+        <button class="card-btn" onclick="location.href='module1.html'">
+          استكشاف
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏞️</div>
+        <h3 class="card-title">الوحدة الثانية</h3>
+        <p>المشاهد الريفية</p>
+        <button class="card-btn" onclick="location.href='module2.html'">
+          استكشاف
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏙️</div>
+        <h3 class="card-title">الوحدة الثالثة</h3>
+        <p>المشاهد الحضارية</p>
+        <button class="card-btn" onclick="location.href='module3.html'">
+          استكشاف
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏡</div>
+        <h3 class="card-title">الوحدة الرابعة</h3>
+        <p>علاقة المجال الريفي بالمجال الحضاري</p>
+        <button class="card-btn" onclick="location.href='module4.html'">
+          استكشاف
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 بوصلة المعلم. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <button id="scrollUpBtn" onclick="scrollToTop()" title="↑ إلى الأعلى">
+      ↑
+    </button>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav").classList.toggle("active");
+      }
+      window.onscroll = () => {
+        const btn = document.getElementById("scrollUpBtn");
+        btn.style.display =
+          document.documentElement.scrollTop > 100 ? "block" : "none";
+      };
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
