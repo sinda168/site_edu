@@ -1,135 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الوحدة الأولى</title>
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <header>
-      <div class="small-screen">
-        <div class="header">
-          <a class="logo" href="/">
-            <img src="th.png" alt="logo" />
-          </a>
-
-          <nav class="nav-links">
-            <a href="index.html">الرئسية</a>
-            <a href="module1.html">الوحدة الأولى</a>
-            <a href="module2.html">الوحدة الثانية</a>
-            <a href="module3.html">الوحدة الثالثة</a>
-            <a href="module4.html">الوحدة الرابعة</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="card">
-        <div class="card-icon">🏫</div>
-        <h3 class="card-title">الدرس الأول: موقع مدرستي</h3>
-        <button class="card-btn" onclick="openModal('modal1')">استكشاف</button>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">
-          <a class="logo"><img src="flag.jpg" /></a>
-        </div>
-        <h3 class="card-title">
-          الدرس الثاني: خريطة تونس: موقع البلاد التونسيّة
-        </h3>
-        <button class="card-btn" onclick="openModal('modal2')">استكشاف</button>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🏞️</div>
-        <h3 class="card-title">
-          الدرس الثالث:القارات و المحيطات و الوحدات التضاريسية الكبرى
-        </h3>
-        <button class="card-btn" onclick="openModal('modal3')">استكشاف</button>
-      </div>
-
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h3>الدرس الأول: موقع مدرستي</h3>
-          <ul>
-            <li>
-              <a href="موقع مدرستي.pdf"
-                ><span class="icon">📄</span> تلخيص الدرس</a
-              >
-            </li>
-            <li>
-              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
-            </li>
-            <li>
-              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
-            </li>
-          </ul>
-          <button class="close-btn" onclick="closeModal('modal1')">
-            إغلاق
-          </button>
-        </div>
-      </div>
-
-      <div id="modal2" class="modal">
-        <div class="modal-content">
-          <h3>الدرس الثاني: خريطة تونس: موقع البلاد التونسيّة</h3>
-          <ul>
-            <li>
-              <a href="خريطة تونس موقع البالد التونسّية.pdf"
-                ><span class="icon">📄</span> تلخيص الدرس</a
-              >
-            </li>
-            <li>
-              <a href="#"><span class="icon">📝</span> جذاذة الدرس</a>
-            </li>
-            <li>
-              <a href="#"><span class="icon">🎥</span> فيديو كرتوني</a>
-            </li>
-          </ul>
-          <button class="close-btn" onclick="closeModal('modal2')">
-            إغلاق
-          </button>
-        </div>
-      </div>
-
-      <div id="modal3" class="modal">
-        <div class="modal-content">
-          <h3>الدرس الثالث:القارات و المحيطات و الوحدات التضاريسية الكبرى</h3>
-          <ul>
-            <li>
-              <a href="لقارات و المحيطات و الوحدات التضارسية الكبرى.pdf"
-                ><span class="icon">📄</span> تلخيص الدرس</a
-              >
-            </li>
-            <li>
-              <a href="fichaaa.pdf"><span class="icon">📝</span> جذاذة الدرس</a>
-            </li>
-            <li>
-              <a href="video.mp4"><span class="icon">🎥</span> فيديو كرتوني</a>
-            </li>
-          </ul>
-          <button class="close-btn" onclick="closeModal('modal3')">
-            إغلاق
-          </button>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2025 بوصلة المعلم. جميع الحقوق محفوظة.</p>
-    </footer>
-
-    <script>
-      function openModal(id) {
-        document.getElementById(id).style.display = "block";
-      }
-
-      function closeModal(id) {
-        document.getElementById(id).style.display = "none";
-      }
-    </script>
-  </body>
-</html>
